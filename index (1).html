@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azuon Technical | Commercial HVAC, Ice Machines & Poultry Services in Onitsha</title>
+<meta name="description" content="Azuon Technical, 80 Venn Road South, Onitsha. Ice cube machine repair, standing AC servicing, cold room maintenance and poultry house ventilation. Call 0803 492 6972.">
+<meta name="theme-color" content="#0B192C">
+<meta property="og:title" content="Azuon Technical | HVAC & Poultry Services in Onitsha">
+<meta property="og:description" content="Ice machines, standing ACs, cold rooms and poultry ventilation. Fast technicians in Onitsha.">
+<meta property="og:image" content="images/1000877676.jpg">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script>
+tailwind.config = {
+  theme: { extend: {
+    fontFamily: { sans: ['Inter','sans-serif'], display: ['Plus Jakarta Sans','sans-serif'] },
+    colors: { brand: { navy:'#0B192C', slate:'#0F2942', blue:'#0284C7', accent:'#38BDF8', agri:'#15803D' } }
+  }}
+}
+</script>
+
+<style>
+  .reveal { opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.show { opacity:1; transform:none; }
+  .photo-box { background:linear-gradient(135deg,#0F2942,#0B192C); }
+  details summary::-webkit-details-marker { display:none; }
+  details[open] .chev { transform:rotate(180deg); }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity:1; transform:none; transition:none; } }
+</style>
+
+<!-- Google search info (LocalBusiness) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HVACBusiness",
+  "name":"Azuon Technical",
+  "telephone":"+2348034926972",
+  "email":"azuon56@gmail.com",
+  "address":{"@type":"PostalAddress","streetAddress":"80 Venn Road South","addressLocality":"Onitsha","addressRegion":"Anambra","addressCountry":"NG"},
+  "openingHours":"Mo-Sa 07:30-18:30"
+}
+</script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-blue selection:text-white">
+
+<!-- Top bar -->
+<div class="bg-brand-navy text-slate-200 text-xs sm:text-sm py-2.5">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+    <span><i class="fa-solid fa-location-dot text-brand-accent mr-1.5"></i>80 Venn Road South, Onitsha, Anambra State</span>
+    <div class="flex items-center gap-5">
+      <a href="tel:+2348034926972" class="hover:text-brand-accent"><i class="fa-solid fa-phone text-brand-accent mr-1.5"></i>0803 492 6972</a>
+      <a href="mailto:azuon56@gmail.com" class="hover:text-brand-accent hidden sm:inline"><i class="fa-solid fa-envelope text-brand-accent mr-1.5"></i>azuon56@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-20">
+    <a href="#top" class="flex items-center gap-3">
+      <div class="w-11 h-11 rounded-xl bg-brand-navy flex items-center justify-center"><i class="fa-solid fa-snowflake text-xl text-brand-accent"></i></div>
+      <div>
+        <span class="font-display font-extrabold text-xl sm:text-2xl text-brand-navy block leading-none">AZUON <span class="text-brand-blue">TECHNICAL</span></span>
+        <span class="text-[11px] uppercase tracking-widest font-semibold text-slate-500 block mt-1">HVAC & Poultry Services</span>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-700">
+      <a href="#services" class="hover:text-brand-blue">Services</a>
+      <a href="#poultry" class="hover:text-brand-blue">Poultry</a>
+      <a href="#gallery" class="hover:text-brand-blue">Our Work</a>
+      <a href="#faq" class="hover:text-brand-blue">FAQ</a>
+      <a href="#contact" class="hover:text-brand-blue">Contact</a>
+    </nav>
+    <div class="hidden md:flex items-center gap-3">
+      <a href="https://wa.me/2348034926972?text=Hello%20Azuon%20Technical,%20I%20need%20a%20technician." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm px-4 py-2.5 rounded-xl">
+        <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+      </a>
+    </div>
+    <button id="menu-btn" aria-label="Open menu" class="md:hidden p-2.5 rounded-xl hover:bg-slate-100"><i class="fa-solid fa-bars text-xl"></i></button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-3 pb-6 space-y-1">
+    <a href="#services" class="block py-2.5 px-3 rounded-lg font-medium hover:bg-slate-50">Services</a>
+    <a href="#poultry" class="block py-2.5 px-3 rounded-lg font-medium hover:bg-slate-50">Poultry</a>
+    <a href="#gallery" class="block py-2.5 px-3 rounded-lg font-medium hover:bg-slate-50">Our Work</a>
+    <a href="#faq" class="block py-2.5 px-3 rounded-lg font-medium hover:bg-slate-50">FAQ</a>
+    <a href="#contact" class="block py-2.5 px-3 rounded-lg font-medium hover:bg-slate-50">Contact</a>
+    <div class="grid grid-cols-2 gap-3 pt-3">
+      <a href="tel:+2348034926972" class="flex items-center justify-center gap-2 bg-brand-navy text-white font-semibold py-3 rounded-xl text-sm"><i class="fa-solid fa-phone"></i> Call</a>
+      <a href="https://wa.me/2348034926972" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-emerald-600 text-white font-semibold py-3 rounded-xl text-sm"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative bg-brand-navy text-white overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="images/1000877676.jpg" alt="" class="w-full h-full object-cover opacity-25" onerror="this.remove()">
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0B192C] via-[#0B192C]/95 to-[#0F2942]/85"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-4 py-16 sm:py-24 grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-7 space-y-6">
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-brand-accent">
+        <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span> Technicians based in Onitsha
+      </div>
+      <h1 class="font-display font-extrabold text-3xl sm:text-5xl leading-[1.15]">
+        Ice machine, AC or cold room <span class="text-brand-accent">not working?</span> We fix it fast.
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+        Azuon Technical handles commercial ice cube machines, standing and split ACs, cold rooms and poultry house ventilation for businesses in Onitsha and across Anambra State.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-brand-blue hover:bg-sky-500 font-bold px-7 py-4 rounded-xl shadow-lg"><i class="fa-solid fa-wrench"></i> Request a Technician</a>
+        <a href="tel:+2348034926972" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/25 font-semibold px-7 py-4 rounded-xl"><i class="fa-solid fa-phone-volume text-brand-accent"></i> 0803 492 6972</a>
+      </div>
+      <div class="pt-6 grid grid-cols-3 gap-4 border-t border-white/15 max-w-xl">
+        <div><p class="font-display font-bold text-2xl text-white">Mon–Sat</p><p class="text-xs sm:text-sm text-slate-300">7:30am – 6:30pm</p></div>
+        <div><p class="font-display font-bold text-2xl text-brand-accent">Emergency</p><p class="text-xs sm:text-sm text-slate-300">Calls attended</p></div>
+        <div><p class="font-display font-bold text-2xl text-white">Onitsha</p><p class="text-xs sm:text-sm text-slate-300">Venn Road South</p></div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-5">
+      <div class="bg-white text-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-blue">Quick Dispatch</span>
+        <h2 class="font-display font-bold text-xl text-brand-navy mb-4">What needs attention?</h2>
+        <ul class="space-y-3 text-sm font-medium mb-6">
+          <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-600"></i> Commercial ice cube machines</li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-600"></i> Standing package ACs & split ACs</li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-600"></i> Cold rooms & chillers</li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-green-700"></i> Poultry house ventilation & hatchery</li>
+        </ul>
+        <a href="https://wa.me/2348034926972?text=Hello%20Azuon%20Technical,%20I%20need%20a%20technician%20in%20Onitsha." target="_blank" rel="noopener" class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl">
+          <i class="fa-brands fa-whatsapp text-xl"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-16 sm:py-24">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center mb-14 reveal">
+      <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-blue bg-sky-100 px-3.5 py-1.5 rounded-full mb-3">What We Do</span>
+      <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-brand-navy mb-4">Commercial & Industrial HVAC Services</h2>
+      <p class="text-slate-600 text-base sm:text-lg">Hotels, eateries, cold-storage depots, hospitals, offices and churches. We keep your cooling running.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-xl bg-sky-50 text-brand-blue flex items-center justify-center mb-5"><i class="fa-solid fa-cubes-stacked text-xl"></i></div>
+        <h3 class="font-display font-bold text-lg text-brand-navy mb-2">Ice Cube Machines</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Installation, water filter setup, compressor repair and descaling.</p>
+      </div>
+      <div class="reveal bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-xl bg-sky-50 text-brand-blue flex items-center justify-center mb-5"><i class="fa-solid fa-wind text-xl"></i></div>
+        <h3 class="font-display font-bold text-lg text-brand-navy mb-2">Standing & Split ACs</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Servicing, gas refilling, PCB fault finding and installation for halls, offices and homes.</p>
+      </div>
+      <div class="reveal bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-xl bg-sky-50 text-brand-blue flex items-center justify-center mb-5"><i class="fa-solid fa-temperature-arrow-down text-xl"></i></div>
+        <h3 class="font-display font-bold text-lg text-brand-navy mb-2">Cold Rooms & Chillers</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Coil cleaning, thermostat setting and quick breakdown response.</p>
+      </div>
+      <div class="reveal bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-xl bg-sky-50 text-brand-blue flex items-center justify-center mb-5"><i class="fa-solid fa-clipboard-check text-xl"></i></div>
+        <h3 class="font-display font-bold text-lg text-brand-navy mb-2">Maintenance Plans</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Monthly or quarterly visits so small faults never become costly breakdowns.</p>
+      </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="mt-16 grid sm:grid-cols-3 gap-6 text-center">
+      <div class="reveal"><div class="mx-auto w-14 h-14 rounded-full bg-brand-navy text-brand-accent font-display font-extrabold text-xl flex items-center justify-center mb-3">1</div><h4 class="font-bold text-brand-navy">You call or WhatsApp</h4><p class="text-sm text-slate-600 mt-1">Tell us the machine and the fault.</p></div>
+      <div class="reveal"><div class="mx-auto w-14 h-14 rounded-full bg-brand-navy text-brand-accent font-display font-extrabold text-xl flex items-center justify-center mb-3">2</div><h4 class="font-bold text-brand-navy">Technician comes</h4><p class="text-sm text-slate-600 mt-1">We check the real fault and tell you honestly.</p></div>
+      <div class="reveal"><div class="mx-auto w-14 h-14 rounded-full bg-brand-navy text-brand-accent font-display font-extrabold text-xl flex items-center justify-center mb-3">3</div><h4 class="font-bold text-brand-navy">We fix it properly</h4><p class="text-sm text-slate-600 mt-1">Repair done right the first time.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- POULTRY -->
+<section id="poultry" class="py-16 sm:py-24 bg-white border-y border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-6 grid grid-cols-2 gap-4 reveal">
+      <div class="photo-box rounded-2xl overflow-hidden h-64 sm:h-72 relative flex items-center justify-center">
+        <i class="fa-solid fa-egg text-4xl text-white/30"></i>
+        <img src="images/1000877674.jpg" alt="Hatchery egg setter trolley with Azuon farm staff" class="absolute inset-0 w-full h-full object-cover" loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="photo-box rounded-2xl overflow-hidden h-64 sm:h-72 relative mt-6 flex items-center justify-center">
+        <i class="fa-solid fa-warehouse text-4xl text-white/30"></i>
+        <img src="images/1000877673.jpg" alt="Poultry house with galvanized ventilation louvers" class="absolute inset-0 w-full h-full object-cover" loading="lazy" onerror="this.remove()">
+      </div>
+    </div>
+    <div class="lg:col-span-6 space-y-6 reveal">
+      <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-agri bg-green-100 px-3.5 py-1.5 rounded-full"><i class="fa-solid fa-egg"></i> Poultry Division</span>
+      <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-brand-navy leading-tight">Poultry Farming & Pen Climate Services</h2>
+      <p class="text-slate-600 leading-relaxed">Alongside HVAC, Azuon Technical runs a working poultry operation. We mix real Nigerian farm experience with technical ventilation knowledge, so your birds stay cool and healthy.</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200"><h4 class="font-bold text-brand-navy text-sm mb-1"><i class="fa-solid fa-circle-check text-brand-agri mr-1.5"></i>Poultry Operations</h4><p class="text-xs text-slate-600">Broiler and layer rearing, brooding setup, hatchery egg setter handling.</p></div>
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200"><h4 class="font-bold text-brand-navy text-sm mb-1"><i class="fa-solid fa-circle-check text-brand-agri mr-1.5"></i>House Ventilation</h4><p class="text-xs text-slate-600">Louvers, extractor fans and cooling to fight heat stress.</p></div>
+      </div>
+      <a href="#contact" class="inline-flex items-center gap-2 bg-brand-agri hover:bg-green-800 text-white font-bold px-6 py-3.5 rounded-xl text-sm">Ask About Poultry Services <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-16 sm:py-24">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 reveal">
+      <div>
+        <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-blue bg-sky-100 px-3.5 py-1.5 rounded-full mb-3">Real Jobs</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-brand-navy">Our Work in the Field</h2>
+        <p class="text-sm text-slate-500 mt-1">Tap any photo to see it bigger.</p>
+      </div>
+      <div class="flex flex-wrap gap-2" id="filters">
+        <button data-filter="all" class="filter-btn bg-brand-navy text-white font-semibold text-sm px-4 py-2.5 rounded-xl">All</button>
+        <button data-filter="hvac" class="filter-btn bg-white border border-slate-200 text-slate-700 font-semibold text-sm px-4 py-2.5 rounded-xl">HVAC & Ice</button>
+        <button data-filter="poultry" class="filter-btn bg-white border border-slate-200 text-slate-700 font-semibold text-sm px-4 py-2.5 rounded-xl">Poultry</button>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-6 sm:gap-8" id="gallery-grid">
+      <article class="gallery-item bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition" data-category="hvac">
+        <button class="open-lightbox photo-box relative block w-full h-72 sm:h-80 overflow-hidden" aria-label="Open ice machine photo">
+          <img src="images/1000877676.jpg" alt="Stainless steel commercial ice cube machine with blue water filter" class="w-full h-full object-cover hover:scale-105 transition duration-500" loading="lazy" onerror="this.remove()">
+          <span class="absolute top-3 left-3 bg-brand-navy/90 text-white text-xs font-semibold px-3 py-1 rounded-lg">Ice Machine</span>
+        </button>
+        <div class="p-6"><h3 class="font-display font-bold text-lg text-brand-navy mb-1.5">Commercial Ice Cube Machine & Water Filter</h3><p class="text-sm text-slate-600">Stainless steel ice maker set up with an inline blue water filter and contactor protection.</p></div>
+      </article>
+
+      <article class="gallery-item bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition" data-category="hvac">
+        <button class="open-lightbox photo-box relative block w-full h-72 sm:h-80 overflow-hidden" aria-label="Open standing AC photo">
+          <img src="images/1000877675.jpg" alt="Kenstar floor-standing air conditioner with outdoor condenser" class="w-full h-full object-cover hover:scale-105 transition duration-500" loading="lazy" onerror="this.remove()">
+          <span class="absolute top-3 left-3 bg-brand-navy/90 text-white text-xs font-semibold px-3 py-1 rounded-lg">Standing AC</span>
+        </button>
+        <div class="p-6"><h3 class="font-display font-bold text-lg text-brand-navy mb-1.5">Kenstar Floor-Standing Air Conditioner</h3><p class="text-sm text-slate-600">Servicing, gas pressure check and outdoor condenser mounted on blocks for a hall or office.</p></div>
+      </article>
+
+      <article class="gallery-item bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition" data-category="poultry">
+        <button class="open-lightbox photo-box relative block w-full h-72 sm:h-80 overflow-hidden" aria-label="Open hatchery photo">
+          <img src="images/1000877674.jpg" alt="Hatchery egg setter trolley with farm workers" class="w-full h-full object-cover hover:scale-105 transition duration-500" loading="lazy" onerror="this.remove()">
+          <span class="absolute top-3 left-3 bg-brand-agri text-white text-xs font-semibold px-3 py-1 rounded-lg">Hatchery</span>
+        </button>
+        <div class="p-6"><h3 class="font-display font-bold text-lg text-brand-navy mb-1.5">Hatchery Egg Setter Trolley</h3><p class="text-sm text-slate-600">Multi-tier egg setter rack loading and hatchery handling by our poultry team.</p></div>
+      </article>
+
+      <article class="gallery-item bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition" data-category="poultry">
+        <button class="open-lightbox photo-box relative block w-full h-72 sm:h-80 overflow-hidden" aria-label="Open poultry house photo">
+          <img src="images/1000877673.jpg" alt="Technician fitting galvanized louvers on a poultry house" class="w-full h-full object-cover hover:scale-105 transition duration-500" loading="lazy" onerror="this.remove()">
+          <span class="absolute top-3 left-3 bg-brand-agri text-white text-xs font-semibold px-3 py-1 rounded-lg">Pen Ventilation</span>
+        </button>
+        <div class="p-6"><h3 class="font-display font-bold text-lg text-brand-navy mb-1.5">Poultry House Louver Installation</h3><p class="text-sm text-slate-600">Heavy-duty galvanized louvers and wall cladding for better airflow in a poultry building.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-16 sm:py-24 bg-brand-navy text-white">
+  <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-6 space-y-6 reveal">
+      <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-accent bg-white/10 px-3.5 py-1.5 rounded-full">About Us</span>
+      <h2 class="font-display font-extrabold text-3xl sm:text-4xl leading-tight">Honest work, based right here in Onitsha.</h2>
+      <p class="text-slate-300 leading-relaxed">When your ice machine, cold room or standing AC breaks down, you need a skilled person who comes on time, finds the real fault and fixes it well. That is how we work at <strong class="text-white">80 Venn Road South</strong>.</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="flex gap-3.5 bg-white/5 p-4 rounded-xl border border-white/10"><i class="fa-solid fa-user-gear text-brand-accent text-xl mt-0.5"></i><div><h4 class="font-bold text-sm">Service first</h4><p class="text-xs text-slate-400 mt-1">If a repair will save you money, we will not push you to buy a new unit.</p></div></div>
+        <div class="flex gap-3.5 bg-white/5 p-4 rounded-xl border border-white/10"><i class="fa-solid fa-map-location-dot text-brand-accent text-xl mt-0.5"></i><div><h4 class="font-bold text-sm">Quick local reach</h4><p class="text-xs text-slate-400 mt-1">Close to Fegge, Upper Iweka, GRA, Main Market and nearby areas.</p></div></div>
+      </div>
+    </div>
+    <div class="lg:col-span-6 reveal">
+      <div class="bg-brand-slate border border-slate-700 rounded-2xl p-6 sm:p-8 space-y-5 shadow-xl">
+        <h3 class="font-display font-bold text-2xl border-b border-slate-700 pb-4">Office Details</h3>
+        <div class="flex gap-4"><i class="fa-solid fa-location-dot text-brand-accent text-lg mt-1"></i><div><p class="text-xs uppercase text-slate-400 font-semibold">Address</p><p class="font-bold">80 Venn Road South, Onitsha, Anambra State</p></div></div>
+        <div class="flex gap-4"><i class="fa-solid fa-phone text-brand-accent text-lg mt-1"></i><div><p class="text-xs uppercase text-slate-400 font-semibold">Phone & WhatsApp</p><a href="tel:+2348034926972" class="font-bold hover:text-brand-accent">0803 492 6972</a></div></div>
+        <div class="flex gap-4"><i class="fa-solid fa-envelope text-brand-accent text-lg mt-1"></i><div><p class="text-xs uppercase text-slate-400 font-semibold">Email</p><a href="mailto:azuon56@gmail.com" class="font-bold hover:text-brand-accent">azuon56@gmail.com</a></div></div>
+        <div class="flex gap-4"><i class="fa-solid fa-clock text-brand-accent text-lg mt-1"></i><div><p class="text-xs uppercase text-slate-400 font-semibold">Working Hours</p><p class="text-sm">Monday – Saturday: 7:30 AM – 6:30 PM</p><p id="open-status" class="text-xs mt-1 font-semibold"></p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-16 sm:py-24">
+  <div class="max-w-3xl mx-auto px-4">
+    <div class="text-center mb-10 reveal">
+      <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-brand-navy">Common Questions</h2>
+    </div>
+    <div class="space-y-3 reveal">
+      <details class="bg-white border border-slate-200 rounded-xl p-5 group">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold text-brand-navy">Do you sell new machines? <i class="fa-solid fa-chevron-down chev text-slate-400 transition"></i></summary>
+        <p class="text-sm text-slate-600 mt-3">No. We focus on installation, servicing, gas refilling and repairs. We only advise a new unit when repair is not worth it.</p>
+      </details>
+      <details class="bg-white border border-slate-200 rounded-xl p-5">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold text-brand-navy">Which areas do you cover? <i class="fa-solid fa-chevron-down chev text-slate-400 transition"></i></summary>
+        <p class="text-sm text-slate-600 mt-3">All of Onitsha and other parts of Anambra State. Tell us your location when you call and we will confirm.</p>
+      </details>
+      <details class="bg-white border border-slate-200 rounded-xl p-5">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold text-brand-navy">Can you attend emergency calls? <i class="fa-solid fa-chevron-down chev text-slate-400 transition"></i></summary>
+        <p class="text-sm text-slate-600 mt-3">Yes. For cold rooms and commercial HVAC emergencies, call or WhatsApp 0803 492 6972 straight away.</p>
+      </details>
+      <details class="bg-white border border-slate-200 rounded-xl p-5">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold text-brand-navy">Do you offer regular maintenance? <i class="fa-solid fa-chevron-down chev text-slate-400 transition"></i></summary>
+        <p class="text-sm text-slate-600 mt-3">Yes. We can visit monthly or quarterly so your equipment does not break down at a bad time.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-16 sm:py-24 bg-white border-t border-slate-200">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center mb-12 reveal">
+      <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-blue bg-sky-100 px-3.5 py-1.5 rounded-full mb-3">Book a Visit</span>
+      <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-brand-navy mb-3">Tell us what you need</h2>
+      <p class="text-slate-600">Fill the form to send your request on WhatsApp or email. Or just call <strong>0803 492 6972</strong>.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-7 bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200">
+        <form id="service-form" class="space-y-5" novalidate>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="clientName" class="block text-sm font-semibold mb-1.5">Name / Business *</label>
+              <input id="clientName" type="text" required placeholder="e.g. Chinedu / Plaza Hotel" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none text-sm">
+            </div>
+            <div>
+              <label for="clientPhone" class="block text-sm font-semibold mb-1.5">Phone Number *</label>
+              <input id="clientPhone" type="tel" required inputmode="tel" placeholder="e.g. 0803 XXX XXXX" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none text-sm">
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="serviceCategory" class="block text-sm font-semibold mb-1.5">Service Needed *</label>
+              <select id="serviceCategory" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-blue outline-none text-sm bg-white">
+                <option>Commercial Ice Cube Machine</option>
+                <option>Standing / Split AC</option>
+                <option>Cold Room / Chiller</option>
+                <option>Scheduled HVAC Maintenance</option>
+                <option>Poultry Services / Pen Ventilation</option>
+              </select>
+            </div>
+            <div>
+              <label for="clientLocation" class="block text-sm font-semibold mb-1.5">Location *</label>
+              <input id="clientLocation" type="text" required placeholder="e.g. Fegge, GRA, Upper Iweka, Awka" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none text-sm">
+            </div>
+          </div>
+          <div>
+            <label for="faultDetails" class="block text-sm font-semibold mb-1.5">What is the problem? *</label>
+            <textarea id="faultDetails" rows="4" required placeholder="e.g. Ice machine not freezing, AC not cooling, need gas refill..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none text-sm"></textarea>
+          </div>
+          <div id="form-feedback" class="hidden p-4 rounded-xl text-sm font-medium" role="status"></div>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <button type="submit" class="flex-1 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-6 rounded-xl text-sm"><i class="fa-brands fa-whatsapp text-lg"></i> Send on WhatsApp</button>
+            <button type="button" id="email-btn" class="inline-flex items-center justify-center gap-2 bg-brand-navy hover:bg-brand-slate text-white font-bold py-3.5 px-6 rounded-xl text-sm"><i class="fa-solid fa-envelope"></i> Send by Email</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="lg:col-span-5 space-y-6">
+        <div class="bg-brand-slate text-white rounded-2xl p-6 sm:p-8">
+          <h3 class="font-display font-bold text-xl mb-4">Prefer to talk?</h3>
+          <a href="tel:+2348034926972" class="flex items-center justify-between bg-white text-brand-navy font-bold px-5 py-3.5 rounded-xl hover:bg-sky-50 mb-3"><span><i class="fa-solid fa-phone text-brand-blue mr-2"></i>0803 492 6972</span><span class="text-xs uppercase bg-sky-100 text-brand-blue px-2.5 py-1 rounded-md">Call</span></a>
+          <button type="button" data-copy="08034926972" data-label="Phone number" class="copy-btn w-full flex items-center justify-between bg-brand-navy/60 hover:bg-brand-navy px-5 py-3 rounded-xl border border-white/15 text-sm mb-3"><span>Copy phone number</span><i class="fa-regular fa-copy text-brand-accent"></i></button>
+          <button type="button" data-copy="azuon56@gmail.com" data-label="Email" class="copy-btn w-full flex items-center justify-between bg-brand-navy/60 hover:bg-brand-navy px-5 py-3 rounded-xl border border-white/15 text-sm"><span>azuon56@gmail.com</span><i class="fa-regular fa-copy text-brand-accent"></i></button>
+          <p id="copy-toast" class="hidden mt-3 text-center text-xs font-semibold text-brand-accent"></p>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+          <div class="p-4 border-b flex justify-between items-center text-sm font-bold text-brand-navy">
+            <span><i class="fa-solid fa-map-pin text-red-600 mr-2"></i>80 Venn Road South, Onitsha</span>
+            <a href="https://maps.google.com/?q=80+Venn+Road+South+Onitsha" target="_blank" rel="noopener" class="text-xs text-brand-blue hover:underline">Open Maps</a>
+          </div>
+          <iframe title="Azuon Technical location" src="https://maps.google.com/maps?q=Venn%20Road%20South,%20Onitsha,%20Anambra&z=15&output=embed" class="w-full h-56 border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-brand-navy text-slate-300 pt-14 pb-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid md:grid-cols-12 gap-8 pb-10 border-b border-slate-800">
+      <div class="md:col-span-5">
+        <span class="font-display font-extrabold text-xl text-white">AZUON <span class="text-brand-accent">TECHNICAL</span></span>
+        <p class="text-sm text-slate-400 mt-3 max-w-sm">Commercial HVAC servicing, ice machine and cold room technicians, and poultry operations in Onitsha, Anambra State.</p>
+      </div>
+      <div class="md:col-span-3">
+        <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-3">Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#services" class="hover:text-brand-accent">Services</a></li>
+          <li><a href="#poultry" class="hover:text-brand-accent">Poultry</a></li>
+          <li><a href="#gallery" class="hover:text-brand-accent">Our Work</a></li>
+          <li><a href="#contact" class="hover:text-brand-accent">Book a Technician</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-3">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li>80 Venn Road South, Onitsha, Anambra State</li>
+          <li><a href="tel:+2348034926972" class="hover:text-white">0803 492 6972</a></li>
+          <li><a href="mailto:azuon56@gmail.com" class="hover:text-white">azuon56@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="pt-6 text-xs text-slate-500 text-center sm:text-left">&copy; <span id="year"></span> Azuon Technical. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/2348034926972?text=Hello%20Azuon%20Technical,%20I%20visited%20your%20website." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
+   class="fixed bottom-5 right-5 z-50 flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-3.5 rounded-full shadow-2xl hover:scale-105 transition">
+  <i class="fa-brands fa-whatsapp text-2xl"></i><span class="hidden sm:inline text-sm">Chat With Us</span>
+</a>
+
+<!-- Lightbox -->
+<div id="lightbox" class="hidden fixed inset-0 z-[60] bg-black/90 flex items-center justify-center p-4" role="dialog" aria-modal="true">
+  <button id="lightbox-close" aria-label="Close" class="absolute top-4 right-4 text-white text-3xl w-12 h-12"><i class="fa-solid fa-xmark"></i></button>
+  <img id="lightbox-img" src="" alt="" class="max-h-[88vh] max-w-full rounded-xl object-contain">
+</div>
+
+<script>
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  const menu = document.getElementById('mobile-menu');
+  document.getElementById('menu-btn').addEventListener('click', () => menu.classList.toggle('hidden'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.add('hidden')));
+
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('show'); io.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Open / closed status (Nigeria time, Mon-Sat 7:30 - 18:30)
+  (function () {
+    const el = document.getElementById('open-status');
+    const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Africa/Lagos' }));
+    const day = now.getDay(), mins = now.getHours() * 60 + now.getMinutes();
+    const open = day !== 0 && mins >= 450 && mins < 1110;
+    el.textContent = open ? 'We are open now.' : 'Closed now. Emergency calls are still attended.';
+    el.className = 'text-xs mt-1 font-semibold ' + (open ? 'text-emerald-400' : 'text-brand-accent');
+  })();
+
+  // Gallery filter
+  const btns = document.querySelectorAll('.filter-btn');
+  btns.forEach(btn => btn.addEventListener('click', () => {
+    btns.forEach(b => {
+      b.classList.remove('bg-brand-navy', 'text-white');
+      b.classList.add('bg-white', 'border', 'border-slate-200', 'text-slate-700');
+    });
+    btn.classList.remove('bg-white', 'border', 'border-slate-200', 'text-slate-700');
+    btn.classList.add('bg-brand-navy', 'text-white');
+    const f = btn.dataset.filter;
+    document.querySelectorAll('.gallery-item').forEach(it => {
+      it.classList.toggle('hidden', !(f === 'all' || it.dataset.category === f));
+    });
+  }));
+
+  // Lightbox
+  const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lightbox-img');
+  document.querySelectorAll('.open-lightbox').forEach(b => b.addEventListener('click', () => {
+    const img = b.querySelector('img');
+    if (!img) return;
+    lbImg.src = img.src; lbImg.alt = img.alt; lb.classList.remove('hidden');
+  }));
+  const closeLb = () => lb.classList.add('hidden');
+  document.getElementById('lightbox-close').addEventListener('click', closeLb);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+
+  // Form
+  const form = document.getElementById('service-form');
+  const fb = document.getElementById('form-feedback');
+  const val = id => document.getElementById(id).value.trim();
+
+  function showFb(msg, bad) {
+    fb.textContent = msg;
+    fb.className = 'p-4 rounded-xl text-sm font-medium border ' +
+      (bad ? 'bg-red-50 border-red-200 text-red-800' : 'bg-emerald-50 border-emerald-200 text-emerald-800');
+  }
+  function getData() {
+    return { name: val('clientName'), phone: val('clientPhone'), service: val('serviceCategory'),
+             location: val('clientLocation'), details: val('faultDetails') };
+  }
+  function valid(d) {
+    if (!d.name || !d.phone || !d.location || !d.details) { showFb('Please fill in all the fields marked *.', true); return false; }
+    if (d.phone.replace(/\D/g, '').length < 10) { showFb('Please enter a correct phone number.', true); return false; }
+    return true;
+  }
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const d = getData(); if (!valid(d)) return;
+    const text = `Hello Azuon Technical,\n\n*NEW SERVICE REQUEST*\n*Name:* ${d.name}\n*Phone:* ${d.phone}\n*Service:* ${d.service}\n*Location:* ${d.location}\n*Details:* ${d.details}`;
+    showFb('Opening WhatsApp to send your request...');
+    window.open('https://wa.me/2348034926972?text=' + encodeURIComponent(text), '_blank', 'noopener');
+  });
+
+  document.getElementById('email-btn').addEventListener('click', () => {
+    const d = getData(); if (!valid(d)) return;
+    const subject = encodeURIComponent(`Service Request: ${d.service} - ${d.name}`);
+    const body = encodeURIComponent(`Hello Azuon Technical,\n\nName: ${d.name}\nPhone: ${d.phone}\nService: ${d.service}\nLocation: ${d.location}\n\nDetails:\n${d.details}`);
+    showFb('Opening your email app...');
+    window.location.href = `mailto:azuon56@gmail.com?subject=${subject}&body=${body}`;
+  });
+
+  // Copy buttons
+  document.querySelectorAll('.copy-btn').forEach(b => b.addEventListener('click', async () => {
+    const text = b.dataset.copy, label = b.dataset.label;
+    try { await navigator.clipboard.writeText(text); }
+    catch (_) {
+      const t = document.createElement('input'); t.value = text; document.body.appendChild(t);
+      t.select(); document.execCommand('copy'); t.remove();
+    }
+    const toast = document.getElementById('copy-toast');
+    toast.textContent = `${label} copied: ${text}`; toast.classList.remove('hidden');
+    setTimeout(() => toast.classList.add('hidden'), 3000);
+  }));
+</script>
+</body>
+</html>
